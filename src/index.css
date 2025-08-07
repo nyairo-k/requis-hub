@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 248 250 252;
+    --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -17,56 +17,50 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 210 40% 96%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 210 40% 96%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 217 91% 60%;
 
-    /* ERP Status Colors */
-    --status-pending: 45 93% 47%;
-    --status-pending-foreground: 26 83% 14%;
-    --status-approved: 142 76% 36%;
-    --status-approved-foreground: 138 76% 97%;
-    --status-paid: 221 83% 53%;
-    --status-paid-foreground: 210 40% 98%;
-    --status-verified: 262 83% 58%;
-    --status-verified-foreground: 210 40% 98%;
+    /* Clean Status Colors - Blue/Gray theme */
+    --status-pending: 39 84% 56%;
+    --status-pending-foreground: 0 0% 100%;
+    --status-approved: 142 71% 45%;
+    --status-approved-foreground: 0 0% 100%;
+    --status-paid: 217 91% 60%;
+    --status-paid-foreground: 0 0% 100%;
+    --status-verified: 262 52% 47%;
+    --status-verified-foreground: 0 0% 100%;
     --status-completed: 142 71% 45%;
-    --status-completed-foreground: 355 78% 97%;
+    --status-completed-foreground: 0 0% 100%;
 
-    /* ERP Theme Colors */
-    --erp-primary: 222 47% 11%;
-    --erp-primary-foreground: 210 40% 98%;
-    --erp-success: 142 76% 36%;
-    --erp-success-foreground: 138 76% 97%;
-    --erp-warning: 45 93% 47%;
-    --erp-warning-foreground: 26 83% 14%;
-    --erp-info: 221 83% 53%;
-    --erp-info-foreground: 210 40% 98%;
-
-    /* Dashboard gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(222 47% 11%), hsl(222 47% 21%));
-    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
-    --gradient-warning: linear-gradient(135deg, hsl(45 93% 47%), hsl(45 93% 57%));
-    --gradient-info: linear-gradient(135deg, hsl(221 83% 53%), hsl(221 83% 63%));
+    /* Clean ERP Theme Colors */
+    --erp-primary: 217 91% 60%;
+    --erp-primary-foreground: 0 0% 100%;
+    --erp-success: 142 71% 45%;
+    --erp-success-foreground: 0 0% 100%;
+    --erp-warning: 39 84% 56%;
+    --erp-warning-foreground: 0 0% 100%;
+    --erp-info: 217 91% 60%;
+    --erp-info-foreground: 0 0% 100%;
 
     /* Card shadows */
-    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
-    --shadow-card-hover: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.1);
+    --shadow-card-hover: 0 4px 6px -1px hsl(0 0% 0% / 0.1);
 
     --radius: 0.5rem;
 

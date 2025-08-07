@@ -27,48 +27,48 @@ export function DashboardCards({ requisitions, currentUser }: DashboardCardsProp
       title: "Pending Approval",
       value: metrics.pending,
       icon: Clock,
-      gradient: "bg-gradient-to-br from-status-pending to-status-pending/80",
-      textColor: "text-status-pending-foreground",
+      bgColor: "bg-card",
+      iconColor: "text-status-pending",
       show: true
     },
     {
       title: "Approved",
       value: metrics.approved,
       icon: CheckCircle,
-      gradient: "bg-gradient-to-br from-status-approved to-status-approved/80",
-      textColor: "text-status-approved-foreground",
+      bgColor: "bg-card",
+      iconColor: "text-status-approved",
       show: true
     },
     {
       title: "Paid",
       value: metrics.paid,
       icon: DollarSign,
-      gradient: "bg-gradient-to-br from-status-paid to-status-paid/80",
-      textColor: "text-status-paid-foreground",
+      bgColor: "bg-card",
+      iconColor: "text-status-paid",
       show: true
     },
     {
       title: "Awaiting Receipt",
       value: metrics.awaitingReceipt,
       icon: Package,
-      gradient: "bg-gradient-to-br from-status-verified to-status-verified/80",
-      textColor: "text-status-verified-foreground",
+      bgColor: "bg-card",
+      iconColor: "text-status-verified",
       show: currentUser.role === 'InventoryStaff'
     },
     {
       title: "Completed",
       value: metrics.completed,
       icon: FileText,
-      gradient: "bg-gradient-to-br from-status-completed to-status-completed/80",
-      textColor: "text-status-completed-foreground",
+      bgColor: "bg-card",
+      iconColor: "text-status-completed",
       show: true
     },
     {
       title: "Total Value",
       value: `Ksh ${metrics.totalValue.toLocaleString()}`,
       icon: AlertCircle,
-      gradient: "bg-gradient-to-br from-erp-primary to-erp-primary/80",
-      textColor: "text-erp-primary-foreground",
+      bgColor: "bg-card",
+      iconColor: "text-primary",
       show: currentUser.role === 'Admin' || currentUser.role === 'Disbursements'
     }
   ];
@@ -76,18 +76,16 @@ export function DashboardCards({ requisitions, currentUser }: DashboardCardsProp
   const visibleCards = cards.filter(card => card.show);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 mb-6">
       {visibleCards.map((card, index) => (
-        <Card key={index} className="overflow-hidden shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-200">
-          <CardHeader className={cn("pb-2", card.gradient)}>
-            <CardTitle className={cn("text-sm font-medium flex items-center gap-2", card.textColor)}>
-              <card.icon className="h-4 w-4" />
-              {card.title}
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="pt-4">
-            <div className="text-2xl font-bold text-foreground">
-              {card.value}
+        <Card key={index} className={cn("border shadow-sm hover:shadow-md transition-shadow duration-200", card.bgColor)}>
+          <CardContent className="p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-xs text-muted-foreground font-medium">{card.title}</p>
+                <p className="text-lg font-bold text-foreground mt-1">{card.value}</p>
+              </div>
+              <card.icon className={cn("h-5 w-5", card.iconColor)} />
             </div>
           </CardContent>
         </Card>
