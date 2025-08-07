@@ -52,6 +52,30 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// ERP Status colors
+				status: {
+					pending: 'hsl(var(--status-pending))',
+					'pending-foreground': 'hsl(var(--status-pending-foreground))',
+					approved: 'hsl(var(--status-approved))',
+					'approved-foreground': 'hsl(var(--status-approved-foreground))',
+					paid: 'hsl(var(--status-paid))',
+					'paid-foreground': 'hsl(var(--status-paid-foreground))',
+					verified: 'hsl(var(--status-verified))',
+					'verified-foreground': 'hsl(var(--status-verified-foreground))',
+					completed: 'hsl(var(--status-completed))',
+					'completed-foreground': 'hsl(var(--status-completed-foreground))',
+				},
+				// ERP Theme colors
+				erp: {
+					primary: 'hsl(var(--erp-primary))',
+					'primary-foreground': 'hsl(var(--erp-primary-foreground))',
+					success: 'hsl(var(--erp-success))',
+					'success-foreground': 'hsl(var(--erp-success-foreground))',
+					warning: 'hsl(var(--erp-warning))',
+					'warning-foreground': 'hsl(var(--erp-warning-foreground))',
+					info: 'hsl(var(--erp-info))',
+					'info-foreground': 'hsl(var(--erp-info-foreground))',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

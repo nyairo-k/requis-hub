@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 248 250 252;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -35,6 +35,38 @@ All colors MUST be HSL.
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
+
+    /* ERP Status Colors */
+    --status-pending: 45 93% 47%;
+    --status-pending-foreground: 26 83% 14%;
+    --status-approved: 142 76% 36%;
+    --status-approved-foreground: 138 76% 97%;
+    --status-paid: 221 83% 53%;
+    --status-paid-foreground: 210 40% 98%;
+    --status-verified: 262 83% 58%;
+    --status-verified-foreground: 210 40% 98%;
+    --status-completed: 142 71% 45%;
+    --status-completed-foreground: 355 78% 97%;
+
+    /* ERP Theme Colors */
+    --erp-primary: 222 47% 11%;
+    --erp-primary-foreground: 210 40% 98%;
+    --erp-success: 142 76% 36%;
+    --erp-success-foreground: 138 76% 97%;
+    --erp-warning: 45 93% 47%;
+    --erp-warning-foreground: 26 83% 14%;
+    --erp-info: 221 83% 53%;
+    --erp-info-foreground: 210 40% 98%;
+
+    /* Dashboard gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(222 47% 11%), hsl(222 47% 21%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 46%));
+    --gradient-warning: linear-gradient(135deg, hsl(45 93% 47%), hsl(45 93% 57%));
+    --gradient-info: linear-gradient(135deg, hsl(221 83% 53%), hsl(221 83% 63%));
+
+    /* Card shadows */
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-card-hover: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -2px hsl(0 0% 0% / 0.1);
 
     --radius: 0.5rem;
 
